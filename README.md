@@ -1,7 +1,7 @@
 # Mi página personal — HTML5 semántico y accesible
 
 ## Propósito
-Página de presentación personal para reclutadores y compañeros de estudio.
+Página de presentación personal para reclutadores y compañeros de universidad.
 
 ## Estructura de archivos
 mi-pagina/
