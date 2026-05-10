@@ -1,0 +1,92 @@
+/* Estilos base */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;          /* texto oscuro — buen contraste */
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Encabezado */
+header {
+  background-color: #003366; /* azul oscuro — contraste alto con blanco */
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  background-color: #e0e0e0;
+  padding: 0.75rem 1rem;
+}
+
+nav a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Visible al navegar con teclado — OBLIGATORIO para accesibilidad */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Contenido principal */
+main {
+  padding: 1.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Formulario */
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #555555;
+  border-top: 1px solid #cccccc;
+  margin-top: 2rem;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mi presentacion personal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- SEMÁNTICA: Uso <header> en lugar de <div> para que los lectores 
+     de pantalla identifiquen el encabezado de la página -->
+        <header>
+  <h1>Santiago Vargas</h1>
+  <p>Desarrollador en formación · Universidad Manuela Beltrán</p>
+</header>
+<!-- ACCESIBILIDAD: aria-label en <nav> porque hay más de una zona 
+     de navegación posible en la página -->
+<nav aria-label="Menú principal">
+  <ul>
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+    <h2 id="titulo-sobre-mi">Sobre mí</h2>
+    <p>
+      Soy estudiante de desarrollo de software con experiencia en React,
+      Android con Kotlin y Node.js. Me apasiona crear aplicaciones desde
+      cero y aprender cada paso del proceso.
+    </p>
+    <img
+      src="assets/perfil.jpg"
+      alt="Foto de perfil"
+      width="200"
+    />
+  </section>
+
+  <section id="proyectos" aria-labelledby="titulo-proyectos">
+    <h2 id="titulo-proyectos">Proyectos</h2>
+
+    <article>
+      <h3>En Desarrollo - GameBag</h3>
+      <p>
+        Tienda de hardware gaming construida con React. Incluye carrito,
+        filtros por categoría y vista en cuadrícula o lista.
+      </p>
+    </article>
+
+    <article>
+      <h3>En Desarrollo - GoTalk</h3>
+      <p>
+        App Android de intercambio de idiomas con matching por deslizamiento,
+        chat en tiempo real y videollamadas vía Twilio.
+      </p>
+    </article>
+  </section>
+
+  <aside aria-label="Habilidades técnicas">
+    <h2>Tecnologías</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>SQL Server</li>
+      <li>Mysql</li>
+      <li>MongoDB</li>
+      <li>AWS</li>
+    </ul>
+  </aside>
+
+  <section id="contacto" aria-labelledby="titulo-contacto">
+    <h2 id="titulo-contacto">Contacto</h2>
+    <form action="#" method="post" novalidate>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="Eric Santiago Vargas Alfonso" required
+               placeholder="Tu nombre completo" />
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required
+               placeholder="tu@email.com" />
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"
+                  placeholder="Escribe tu mensaje..."></textarea>
+      </div>
+      <button type="submit" aria-label="Enviar formulario de contacto">
+        Enviar
+      </button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Santiago Vargas · Bogotá, Colombia</p>
+</footer>
+    </body>
+</html>
